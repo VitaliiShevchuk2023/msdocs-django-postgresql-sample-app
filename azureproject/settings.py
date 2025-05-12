@@ -22,7 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = os.getenv('SECRET_KEY')
-SECRET_KEY = 'p&%*c&00r*+dcp&-fg+=#-om!fwwp_mbgvu!$jzqck@z9&#9b6'
+# Отримання SECRET_KEY з налаштувань додатку Azure
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+#SECRET_KEY = 'p&%*c&00r*+dcp&-fg+=#-om!fwwp_mbgvu!$jzqck@z9&#9b6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
