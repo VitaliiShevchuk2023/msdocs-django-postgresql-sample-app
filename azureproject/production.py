@@ -34,7 +34,8 @@ DATABASES = {
          'NAME': os.environ['AZURE_POSTGRESQL_NAME'],
          'HOST': os.environ['AZURE_POSTGRESQL_HOST'],
          'USER': os.environ['AZURE_POSTGRESQL_USER'],
-         'PASSWORD': os.environ['AZURE_POSTGRESQL_PASSWORD'],
+         #'PASSWORD': os.environ['AZURE_POSTGRESQL_PASSWORD'],
+         'PASSWORD':'lgow2r$TtcKlWy$5', 
          'OPTIONS': {'sslmode': 'require'},
      }
  }
